@@ -6,7 +6,8 @@
         "psr-4": {
             "app\\":"app/",
             "app\\controllers\\":"app/controllers/",
-            "helpers\\":"helpers/"
+            "helpers\\":"helpers/",
+            "database\\":"database"
         }
     }
 }

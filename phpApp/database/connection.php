@@ -1,20 +1,17 @@
 <?php
+
 namespace database;
 
-use PDO;
-use PDOException;
+use mysqli;
 
-class connection{
+class connection
+{
     public static function connect()
     {
-        try{
-            $pdo = new PDO('mysql:host=localhost;dbname=marketplace', 'root', '');
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $pdo;
-        }
-        catch(PDOException $e)
-        {
-            echo 'Connection failed: ' . $e->getMessage();
-        }
+        $server = 'localhost';
+        $username = 'root';
+        $dbname = 'marketplace';
+        $password = '';
+        return $connection = new mysqli($server, $username, $password, $dbname);
     }
 }

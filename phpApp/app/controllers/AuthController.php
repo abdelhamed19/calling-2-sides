@@ -9,9 +9,13 @@ class AuthController{
     {
         header('Location: http://127.0.0.1:8000/login');
     }
-    public function register()
+    public function logout()
     {
-        return 'register';
+        session_start();
+        $id = $_SESSION['id'];
+        unset($id);
+        header('Location: index.php');
+        exit;
     }
     public function authenticatr()
     {

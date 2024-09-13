@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'helpers\\' => array($baseDir . '/helpers'),
+    'database\\' => array($baseDir . '/database'),
     'app\\controllers\\' => array($baseDir . '/app/controllers'),
     'app\\' => array($baseDir . '/app'),
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),

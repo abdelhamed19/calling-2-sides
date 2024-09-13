@@ -15,6 +15,10 @@ class ComposerStaticInit7422faf8f33d1f1cdfca8767e0ffc0f4
         array (
             'helpers\\' => 8,
         ),
+        'd' => 
+        array (
+            'database\\' => 9,
+        ),
         'a' => 
         array (
             'app\\controllers\\' => 16,
@@ -35,6 +39,10 @@ class ComposerStaticInit7422faf8f33d1f1cdfca8767e0ffc0f4
         'helpers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/helpers',
+        ),
+        'database\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database',
         ),
         'app\\controllers\\' => 
         array (
